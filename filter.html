@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F I L T E R</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: linear-gradient(-135, gray, black);
+      }
+      .image_wrapper {
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 100px auto;
+      }
+      .image_wrapper img {
+        width: 100%;
+        filter: grayscale(1);
+        padding: 10px;
+        transition: filter 1.5s ease;
+      }
+      .image_wrapper img:hover {
+        cursor: pointer;
+        filter: grayscale(0);
+        /* filter: brightness(2); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image_wrapper">
+      <img
+        src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt3125544effd09308/639f60c65d0ea95c1ee0e6c3/GettyImages-1450106798.jpg"
+        alt="Messi"
+      />
+    </div>
+  </body>
+</html>
